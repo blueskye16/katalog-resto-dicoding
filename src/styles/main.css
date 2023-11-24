@@ -1,0 +1,498 @@
+/* Reset Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  min-height: 40px;
+}
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+}
+
+.header__title {
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 44px;
+  padding: 0.5rem;
+}
+
+/* Navigation Styles */
+.nav__wrap {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #1f1d1d;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  min-width: 20%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.nav__item a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.2s ease;
+}
+
+.nav__item a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Skip Content Styles */
+.skip__content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  border: none;
+}
+
+.skip__content:focus {
+  top: 150px;
+}
+
+/* Jumbotron Styles */
+.hero {
+  display: flex;
+  min-height: 42em;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 5, 0.2), rgba(0, 0, 5, 0.5)),
+    url("../public/images/heros/hero-image_4.jpg");
+}
+
+.hero__inner {
+  text-align: center;
+  color: #dddd;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__inner h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  text-shadow: 1px 1px #141414;
+}
+
+.hero__inner p {
+  margin-top: 0.5em;
+}
+
+/* Main Content Styles */
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content__label {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.content {
+  margin: 32px;
+  text-align: left;
+}
+
+.post-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post-city {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #135ea8a2;
+  min-width: 6em;
+  padding: 0.5em;
+  color: white;
+  font-weight: 500;
+  margin: 14px 0;
+  text-align: center;
+}
+
+.post-pics {
+  width: 100%;
+  height: 50%;
+}
+
+.post-item-content {
+  padding: 1.5em;
+  width: 100%;
+  margin: 0;
+}
+
+.post-item-rating {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
+}
+
+.list-rating-value {
+  color: red;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 10px;
+  min-width: 44px;
+  display: inline-block;
+}
+
+.post-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s;
+  width: 100%;
+  align-items: center;
+}
+
+.post-name:hover {
+  opacity: 0.5;
+}
+
+.post-name a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.post-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #135ea8;
+  color: white;
+  font-size: 14px;
+  padding: 2.5em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Restaurant Card Styles */
+.restaurant-card {
+  display: block;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.restaurant-info {
+  padding: 16px;
+}
+
+.restaurant-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.restaurant-description {
+  color: #555;
+}
+
+.restaurant-city {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+/* Restaurant List Styles */
+.list-resto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+  gap: 20px;
+  
+  
+}
+
+/* Main Restaurant Container Styles */
+.main-resto_container {
+  padding: 20px;
+}
+
+.main-resto_label {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Submit Button Styles */
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Add a primary button style */
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Detail Container Styles */
+.detail {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Detail Info Container Styles */
+.container-info {
+  display: flex;
+}
+
+/* Detail Image Container Styles */
+.img-container {
+  margin-right: 20px;
+}
+
+/* Detail Info Styles */
+.detail-info {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-info li {
+  margin-bottom: 10px;
+}
+
+/* Resto Name, Address, and Rating Styles */
+.resto-name, .resto-address, .resto-rating {
+  display: flex;
+  align-items: center;
+}
+
+.resto-name i, .resto-address i, .resto-rating i {
+  margin-right: 10px;
+}
+
+.like{
+  cursor: pointer;
+  background: salmon;
+  width: min-content;
+  padding: 10px;
+  border-radius: 100%;
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+}
+
+.like > button{
+  border: none;
+}
+
+h2{
+  margin: 50px 0px;
+}
+
+.resto-item_image-container{
+  width: 100%;
+}
+
+/* Foods and Drinks Styles */
+.foods, .drinks {
+  margin-right: 20px;
+}
+
+.restaurant-detail__foods, .restaurant-detail__drinks {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  color: gray;
+}
+
+.restaurant-detail__foods li, .restaurant-detail__drinks li {
+  margin-bottom: 10px;
+}
+
+/* Review Styles */
+.detail-review-item {
+  margin-bottom: 20px;
+}
+
+.header-review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name-review {
+  display: flex;
+  align-items: center;
+}
+
+.name-review i {
+  margin-right: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.header-review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name-review {
+  display: flex;
+  align-items: center;
+}
+
+.name-review i {
+  margin-right: 10px;
+}
+
+.body-review {
+  line-height: 1.5;
+}
+
+
+.restaurant-detail__menu-list {
+  display: flex;
+  gap: 20px;
+}
+
+.foods,
+.drinks {
+  flex: 1;
+}
+
+.restaurant-detail__foods,
+.restaurant-detail__drinks {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant-detail__foods li,
+.restaurant-detail__drinks li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-detail__foods li i,
+.restaurant-detail__drinks li i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
